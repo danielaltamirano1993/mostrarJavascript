@@ -1,0 +1,28 @@
+<HTML>
+	<HEAD>
+		<TITLE>Mostrar y/o Ocultar</TITLE>
+	</HEAD>
+	
+	<BODY>
+		<center>
+		<div>
+		Mostrar y Ocultar
+		</div>
+		<br><br>		
+		<img id="a" src="a.jpg" width="300"/> 
+		<br><br>		
+		<a href="javascript:efecto('a', true)">Mostrar </a>
+		<br><br>
+		<a href="javascript:efecto('a', false)">Ocultar </a>
+		
+		</center>
+	</BODY>
+	
+	<script>
+		function efecto(id, a ){
+			var img = document.getElementById(id);
+			img.style.visibility = (a ? 'visible' : 'hidden')
+		}
+	</script>
+	
+</HTML>
